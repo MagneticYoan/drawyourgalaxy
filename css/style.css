@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    background-color: black;
+    margin : 0;
+    
+}
+
+header {
+    background-image: url(../img/galaxy.jpg);
+    width: 100%;
+    margin : 0 0 3% 0;
+    padding: 1%;
+    color: white;
+}
+
+main {
+    width: 100%;
+}
+
+h1 a {
+    color : white;
+    text-shadow: 1px 1px 30px black;
+    transition: 0.5s;
+}
+
+h1 a:hover {
+    font-size: 2.5rem;
+    transition: 0.5s;
+    color: yellow;
+}
+
+section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+section:first-of-type {
+    display:block;
+}
+
+button {
+    margin: 1%;
+    padding: 1%;
+    border: none;
+    background-color: navy;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#button_size button {
+    width: 50px;
+}
+
+#button_color button {
+    width: 20px;
+    height: 20px;
+}
+
+#canvas {
+    margin : 0 auto;
+}
+
+#button_size button:nth-of-type(2) {
+    font-size: 2rem;
+}
+
+#button_size button:nth-of-type(3) {
+    font-size: 3rem;
+}
+
+#button_cyan {
+    background-color: cyan;
+}
+
+#button_orange {
+    background-color: white;
+}
+
+#button_red {
+    background-color: deeppink;
+    font-size: 1.5em;
+    color:red;
+}
+
+#button_lime {
+    background-color: lime;
+}
+
+.show_selector {
+    display: none!important;
+}
+
+#canvas {
+    background-color: black;
+}
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    z-index:-1;
+}
+
+.star.tiny {
+    width: 1px;
+    height: 1px;
+}
+
+.star.normal {
+    width: 2px;
+    height: 2px;
+}
+
+.star.big {
+    width: 3px;
+    height: 3px;
+}
+
+footer {
+    color: white;
+    background-color: navy;
+    margin: 2% 0 0 0 ;
+    padding: 1%;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .mobile {
+        display: block;
+        color: chartreuse;
+        text-align: center;
+        margin-top: 40%;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    canvas, .buttons {
+        display : none;
+    }
+}

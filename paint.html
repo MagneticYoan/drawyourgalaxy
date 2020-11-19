@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your GALAXY</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- CSS Vendor -->
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" media="all" />
+		<!-- CSS Perso -->
+		<link rel="stylesheet" type="text/css" href="css/base.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" /> 
+		<!-- JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"> </script>
+        <script type="module" src="js/write_on_canvas.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1><a href="paint.html">Create your own GALAXY</a></h1>
+            <h5>Created with <i class="fa fa-star"></i> by Yoan</h5>
+        </header>
+        <main id="shiningStars">
+            <section class="canvas_all">
+                <canvas id="canvas" width="700px" height="500px" style="border:1px solid black"> </canvas>
+                <canvas id="canvas_color" width="250px" height="250px" style="border:1px solid black" class="show_selector"> </canvas>
+            </section>
+            <section class="buttons">
+                <button id="clear_all">Clear all</button>
+                <button id="color_selector">Color Selector</button>
+                <button id="save">Save</button>
+            </section>
+            <section id="button_color" class="buttons">
+                <button data-color="red" id="button_red">  </button>
+                <button data-color="cyan" id="button_cyan">  </button>
+                <button data-color="orange" id="button_orange">  </button>
+                <button data-color="lime" id="button_lime">  </button>
+            </section>
+            <section id="button_size" class="buttons">
+                <button data-size = "3">•</button>
+                <button data-size = "5">•</button>
+                <button data-size = "7">•</button>
+            </section>
+            <section class="mobile">
+                <p>Sorry, this website is only available on computer.</p>
+                <img src="img/sad_cat.png" alt="sad cat"/>
+            </section>
+        </main>
+    </body>
+</html>
